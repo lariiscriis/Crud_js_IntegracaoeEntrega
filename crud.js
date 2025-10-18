@@ -15,8 +15,8 @@ app.use(express.json());
 
 // Banco de dados em memória
 let alunos = [
-    { id: 1, nome: 'João', telefone: '123456789', idade: 20, turma: 'A' },
-    { id: 2, nome: 'Maria', telefone: '987654321', idade: 22, turma: 'B' }
+    { id: 1, nome: 'Bruno', telefone: '123456789', idade: 20, turma: 'A' },
+    { id: 2, nome: 'Alessandro', telefone: '987654321', idade: 22, turma: 'B' }
 ];
 
 // Endpoints CRUD
@@ -81,3 +81,4 @@ app.delete('/alunos/:id', (req, res) => {
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`);
 });
+
